@@ -1,0 +1,47 @@
+/***************************************************************************
+ * The contents of this file were generated with Amplify Studio.           *
+ * Please refrain from making any modifications to this file.              *
+ * Any changes to this file will be overwritten when running amplify pull. *
+ **************************************************************************/
+
+import * as React from "react";
+import { AutocompleteProps, GridProps, TextFieldProps } from "@aws-amplify/ui-react";
+import { EscapeHatchProps } from "@aws-amplify/ui-react/internal";
+import { Teilnehmer, Convention } from "../models";
+export declare type ValidationResponse = {
+    hasError: boolean;
+    errorMessage?: string;
+};
+export declare type ValidationFunction<T> = (value: T, validationResponse: ValidationResponse) => ValidationResponse | Promise<ValidationResponse>;
+export declare type TeilnehmerUpdateFormInputValues = {
+    Vorname?: string;
+    Nachname?: string;
+    Geburtsdatum?: string;
+    conventions?: Convention[];
+};
+export declare type TeilnehmerUpdateFormValidationValues = {
+    Vorname?: ValidationFunction<string>;
+    Nachname?: ValidationFunction<string>;
+    Geburtsdatum?: ValidationFunction<string>;
+    conventions?: ValidationFunction<Convention>;
+};
+export declare type PrimitiveOverrideProps<T> = Partial<T> & React.DOMAttributes<HTMLDivElement>;
+export declare type TeilnehmerUpdateFormOverridesProps = {
+    TeilnehmerUpdateFormGrid?: PrimitiveOverrideProps<GridProps>;
+    Vorname?: PrimitiveOverrideProps<TextFieldProps>;
+    Nachname?: PrimitiveOverrideProps<TextFieldProps>;
+    Geburtsdatum?: PrimitiveOverrideProps<TextFieldProps>;
+    conventions?: PrimitiveOverrideProps<AutocompleteProps>;
+} & EscapeHatchProps;
+export declare type TeilnehmerUpdateFormProps = React.PropsWithChildren<{
+    overrides?: TeilnehmerUpdateFormOverridesProps | undefined | null;
+} & {
+    id?: string;
+    teilnehmer?: Teilnehmer;
+    onSubmit?: (fields: TeilnehmerUpdateFormInputValues) => TeilnehmerUpdateFormInputValues;
+    onSuccess?: (fields: TeilnehmerUpdateFormInputValues) => void;
+    onError?: (fields: TeilnehmerUpdateFormInputValues, errorMessage: string) => void;
+    onChange?: (fields: TeilnehmerUpdateFormInputValues) => TeilnehmerUpdateFormInputValues;
+    onValidate?: TeilnehmerUpdateFormValidationValues;
+} & React.CSSProperties>;
+export default function TeilnehmerUpdateForm(props: TeilnehmerUpdateFormProps): React.ReactElement;

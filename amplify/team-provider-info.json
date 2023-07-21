@@ -1,0 +1,20 @@
+{
+  "staging": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-tut5-staging-210224-authRole",
+      "UnauthRoleArn": "arn:aws:iam::200818803380:role/amplify-tut5-staging-210224-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::200818803380:role/amplify-tut5-staging-210224-authRole",
+      "Region": "eu-west-1",
+      "DeploymentBucketName": "amplify-tut5-staging-210224-deployment",
+      "UnauthRoleName": "amplify-tut5-staging-210224-unauthRole",
+      "StackName": "amplify-tut5-staging-210224",
+      "StackId": "arn:aws:cloudformation:eu-west-1:200818803380:stack/amplify-tut5-staging-210224/ba4e06d0-2740-11ee-b207-06ecfad48bb3",
+      "AmplifyAppId": "d15mt7sfb7g41d"
+    },
+    "categories": {
+      "auth": {
+        "Tut5": {}
+      }
+    }
+  }
+}
